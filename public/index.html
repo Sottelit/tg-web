@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>House Mood Demo</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    #controls { position: absolute; top: 10px; right: 10px; z-index: 1; }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <button id="upgrade">Upgrade House</button>
+    <select id="mood">
+      <option value="happy">Happy</option>
+      <option value="sad">Sad</option>
+      <option value="angry">Angry</option>
+    </select>
+    <button id="setMood">Set Mood</button>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
